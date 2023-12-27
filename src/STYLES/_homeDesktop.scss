@@ -1,0 +1,36 @@
+.homeDesktop {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2vw;
+    flex: 1;
+    margin: 5% 5%;
+    display: none;
+   
+    
+    &__content { padding-left: 5%; }
+
+    &__h1 {
+        font-family: var(--font-orbitron);
+        margin-bottom: 15%;
+      
+    }
+
+    &__a {
+        background-color: var(--color-orange);
+        padding: 20px 40px;
+        font-family: var(--font-titilium);
+        color: white;
+        font-weight: 700;
+        font-size: 2vw;
+        border-radius: 10px;  
+    }
+
+    &__a:hover {
+        background-color: white;
+        color: var(--color-orange);
+    }
+}
+
+@media screen and (min-width: 768px) { .homeDesktop { display: flex; } }

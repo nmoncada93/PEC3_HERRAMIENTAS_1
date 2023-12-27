@@ -1,0 +1,22 @@
+.construccion {
+    background-color: var(--color-orange);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    font-family: var(--font-titilium);
+
+    &__img { width: 50%; }
+}
+
+@media (min-width:778px) {
+    .construccion {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

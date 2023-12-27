@@ -1,0 +1,44 @@
+.headerMobil__span, .headerDesktop {
+  color: var(--color-orange);
+  font-family: var(--font-orbitron);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.headerMobil, .headerDesktop__content, .headerDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.headerDesktop {
+  font-size: 18px;
+  justify-content: space-between;
+  padding: 20px 40px;
+  display: none;
+ 
+
+  &__li{
+      display: inline-block;
+      padding-right: 15px;
+  }
+
+  &__a { color: white; }
+
+  &__a:hover{ color: var(--color-orange); }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .headerDesktop { display: flex; }
+
+  .headerMobil { display: none; }
+}
+
+
+
+
+
+

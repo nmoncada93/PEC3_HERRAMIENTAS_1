@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+    <meta name="description"
+        content="Este sitio web tiene como finalidad presentar la ingenieria de los sistemas espaciales">
+    <meta name="author" content="Nicolas Moncada">
+    <title>INGENIERIA DE LOS SISTEMA ESPACIALES: Mecanica Orbital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./IMAGES/logo-sistemas-espaciales.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7b545bf262.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bodyMecanicaOrbital">
+    <header>
+        <div class="headerMobil">
+            <a href="index.html"><img class="headerMobil__img" src="./IMAGES/logo-sistemas-espaciales.png"
+                    alt="logo de un astronauta" style="width: 60px; height: 60px;"></a>
+            <span class="headerMobil__span">SPACE SYSTEMS</span>
+        </div>
+        <include src="src/VIEWS/header.html"></include>
+    </header>
+    <main>
+        <article class="article">
+            <h1 class="article__h1">Mecánica Orbital</h1>
+            <div class="articleContainer">
+                <!--<img src="./IMAGES/solar-sistem.jpg" alt="imagen del sistema solar" class="articleContainer__img">-->
+                <img srcset="
+                ./IMAGES/solar-sistem-small.png 320w,
+                ./IMAGES/solar-sistem-small.png 480w,
+                ./IMAGES/solar-sistem-large.jpg 800w
+                " sizes="(max-width:320px) 280px,
+                (max-width:480px) 440px, 800px" src="./IMAGES/solar-sistem-large.jpg" alt="imagen del sistema solar"
+                    class="articleContainer__img">
+                <div class="articleContainer__content">
+                    <p class="articleContainer__p">Para entender y comenzar a explicar de qué se trata la astrodinámica
+                        es importante situarnos y tener claro algunas definiciones y conceptos básicos como los que se
+                        explican a continuación.
+                    </p>
+                </div>
+            </div>
+            <div class="articleContent">
+                <h2 class="article__h2">Conceptos relacionados</h2>
+                <dl class="articleContainer__dl">
+                    <div class="articleContentItem">
+                        <div class="articleContentItem1">
+                            <dt class="articleContainer__dt">Aeronáutica</dt>
+                            <dd class="articleContainer__dd">Es el estudio que contempla cualquier actividad aérea de
+                                máximo
+                                100km de altitud desde la
+                                superficie terrestre (nivel del mar)</dd>
+                        </div>
+                        <div class="articleContentItem2">
+                            <dd class="articleContainer__dd"><img src="./IMAGES/aeronautica.png"
+                                    alt="foto de un avion en los aires"></dd>
+                        </div>
+                    </div>
+                    <div class="articleContentItem">
+                        <dl class="articleContentItem1--order">
+                            <dt class="articleContainer__dt">Astronáutica</dt>
+                            <dd class="articleContainer__dd">Es toda actividad a más de 100 km de la superficie
+                                terrestre.
+                                Se
+                                estudia todo el entorno espacial, el vacío y todas sus consecuencias, tecnologías
+                                aeroespaciales, exploración espacial y supervivencia humana, de tal manera que toda
+                                la
+                                ciencia e
+                                ingeniería aplicada se realiza teniendo en cuenta todos estos factores. En esta
+                                página
+                                web
+                                sobre
+                                sistemas espaciales no abarcaremos todos estos contenidos pero si tenemos una
+                                categoría
+                                muy
+                                interesante: <a href="./medio-ambiente-espacial.html"
+                                    class="articleContainer__a"><strong> Medio Ambiente
+                                        Espacial</strong></a> leyendo este artículo tendremos una idea
+                                mucho más amplia
+                                de todo el entorno espacial y sus implicaciones en las misiones y sistemas.</dd>
+                        </dl>
+                        <div class="articleContentItem2--order">
+                            <dd class="articleContainer__dd"><img src="./IMAGES/astronautica.png"
+                                    alt="foto de un avion en los aires"></dd>
+                        </div>
+                    </div>
+                    <div class="articleContentItem">
+                        <div class="articleContentItem1">
+                            <dt class="articleContainer__dt">Astrodinámica</dt>
+                            <dd class="articleContainer__dd">Forma parte de la astronáutica. Podemos definir
+                                astrodinámica
+                                como
+                                una rama de la ingeniería aeroespacial y de la física, especialmente las leyes de Newton
+                                de
+                                la
+                                gravedad y el movimiento. La astrodinámica se basa en estudiar el comportamiento de los
+                                cuerpos
+                                que orbitan en el espacio exterior y alrededor de la tierra. Algunos de estos cuerpos
+                                serían
+                                los
+                                satélites, naves espaciales, planetas, asteroides y otros objetos.
+                            </dd>
+                        </div>
+                        <div class="articleContentItem2">
+                            <dd class="articleContainer__dd"><img src="./IMAGES/astrodinamica.png"
+                                    alt="foto de un avion en los aires"></dd>
+                        </div>
+                    </div>
+                </dl>
+                <p class="articleContainer__p">Este estudio se puede centrar en el cálculo y predicción de movimientos,
+                    control de estos objetos y velocidades, teniendo en cuenta diversos factores como, la masa de los
+                    objetos, la fuerza de atracción gravitatoria, la resistencia atmosférica, viento solar,
+                    perturbaciones electromagnéticas y más. Todo esto es fundamental para el diseño, planificación y
+                    desarrollo de misiones espaciales y trayectorias fuera del ámbito terrestre.</p>
+                <p class="articleContainer__p">Dentro de la astrodinámica debemos aclarar que se encuentra, la mecánica
+                    orbital que sería el estudio de todos estos cuerpos que orbitan el espacio exterior en condiciones
+                    ideales, pero en astrodinámica se estudia su aplicación práctica a misiones espaciales teniendo en
+                    cuenta todas sus posibles perturbaciones y entorno real.</p>
+                <p class="articleContainer__p">Por el momento no ampliaremos tanto el contenido de esta página web sobre
+                    sistemas de ingeniería aeroespacial, pero si seguís leyendo más abajo podéis comprender un poco más
+                    sobre la mecánica orbital, ya que es el tema en el que nos enfocaremos más por el momento.</p>
+            </div>
+            <div class="articleContent--simple">
+                <h2 class="article__h2">La Mecánica Orbital</h2>
+                <div class="articleContentItem">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YD4dol6JM_0" allowfullscreen
+                        class="articleContainer__iframe"></iframe>
+                    <blockquote class="articleContainer__blockquote">
+                        <p style="text-align: center;">"La mecánica orbital es un campo fascinante que nos permite
+                            comprender la danza celestial de
+                            los
+                            cuerpos
+                            celestes en el vasto universo."</p>
+                        <cite>Dr. Astrónomo, Instituto de Astronomía</cite>
+                    </blockquote>
+                </div>
+                <p class="articleContainer__p">La mecánica orbital únicamente se centra en el estudio de órbitas
+                    aplicando
+                    los principios básicos de la física, la descripción de trayectorias y la manera de situarse
+                    en
+                    el
+                    espacio. La gran diferencia respecto a la astrodinámica es que en la mecánica orbital se
+                    suele
+                    considerar muchas situaciones como ideales sin tener en cuenta muchas perturbaciones.</p>
+                <p class="articleContainer__p">Para adentrarnos en la mecánica orbital y tener una idea genérica es
+                    necesarios aprender y
+                    tener
+                    claro algún conceptos y fundamentos básicos como lo que se explican continuación:</p>
+                <dl>
+                    <div class="articleContentItem">
+                        <div class="articleContentItem1">
+                            <dt class="articleContainer__dt">La ley de gravitación universal de newton</dt>
+                            <dd class="articleContainer__dd"> Es la base de la mecánica orbital. </dd>
+                            <dd class="articleContainer__dd">Fue concebida por Isaac Newton y se recomienda su estudio y
+                                entendimiento en
+                                profundidad.
+                            </dd>
+                            <dd class="articleContainer__dd">Por definición, establece que dos objetos con masas
+                                diferentes se atraen
+                                gravitacionalmente,
+                                y
+                                la fuerza de atracción entre ellos es directamente proporcional al producto de sus masas
+                                e
+                                inversamente proporcional al cuadrado de la distancia que los separa.</dd>
+                        </div>
+                        <div class="articleContentItem2">
+                            <dt class="articleContainer__dt">Las Leyes de Kepler</dt>
+                            <dd class="articleContainer__dd"><strong style="border-bottom: 1px solid #FD602E;">
+                                    Primera ley (Ley
+                                    de las Órbitas):</strong> Esta
+                                ley establece que
+                                los planetas se mueven
+                                alrededor
+                                del
+                                Sol en órbitas elípticas, con el Sol ubicado en uno de los focos de la elipse. En otras
+                                palabras, los planetas no siguen órbitas circulares perfectas alrededor del Sol, como se
+                                creía
+                                en la antigüedad, sino que sus órbitas son elípticas.</dd>
+                            <dd class="articleContainer__dd"><strong style="border-bottom: 1px solid #FD602E;"> Segunda
+                                    ley (Ley de las Áreas Iguales):</strong> La segunda ley de
+                                Kepler establece que un
+                                planeta
+                                barre
+                                áreas iguales en tiempos iguales a lo largo de su órbita elíptica. Esto significa que un
+                                planeta
+                                se mueve más rápido cuando está más cerca del Sol (perihelio) y más lento cuando está
+                                más
+                                lejos
+                                (afelio). En otras palabras, la velocidad del planeta varía a lo largo de su órbita,
+                                pero el
+                                área total barrida en un tiempo determinado es constante.</dd>
+                            <dd class="articleContainer__dd"><strong style="border-bottom: 1px solid #FD602E;">Tercera
+                                    ley (Ley
+                                    de las Proporciones Periódicas):</strong> La
+                                tercera ley de Kepler establece una
+                                relación matemática entre el período orbital (el tiempo que un planeta tarda en dar una
+                                vuelta
+                                completa alrededor del Sol) y el semieje mayor de su órbita elíptica (la distancia
+                                promedio
+                                desde el planeta al Sol). La ley se puede expresar de la siguiente manera: "El cuadrado
+                                del
+                                período orbital es directamente proporcional al cubo del semieje mayor de la órbita".
+                                Esta
+                                ley
+                                permite comparar los movimientos de diferentes planetas y es fundamental en la
+                                predicción de
+                                sus
+                                órbitas.</dd>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+            <div class="articleContent">
+                <h2 class="article__h2">Qué son las Órbitas y como se clasifican</h2>
+                <div class="articleContentItem">
+                    <div class="articleContentItem1">
+                        <p class="articleContent__p">Una órbita es una trayectoria que describe un cuerpo moviéndose
+                            alrededor de otro cuerpo con
+                            una
+                            masa
+                            mucho mayor. El hecho de que la masa de un objeto sea inmensamente mayor que el otro objeto
+                            crea
+                            una
+                            influencia gravitatoria que permite una fuerza de atracción del objeto más pequeño.</p>
+                        <p class="articleContent__p">Las órbitas se pueden clasificar de muchas maneras y es importante
+                            dar un repaso a estos
+                            conceptos
+                            para
+                            familiarizarse y entender mucho mejor la mecánica orbital.</p>
+                    </div>
+                    <div class="articleContentItem2">
+                        <img src="./IMAGES/tipos-orbitas.png" alt="tipos de orbitas" style="margin-left: 10px;">
+                    </div>
+                </div>
+                <div class="articleContentItem">
+                    <div class="articleContentItem1">
+                        <h3>Clasificación céntrica</h3>
+                    </div>
+                    <div class="articleContentItem2"
+                        style="border-left: 1px solid #FD602E; padding-left: 10px; margin-bottom: 10px;">
+                        <p>Heliocéntrica: el centro de la órbita es el sol</p>
+                        <p>Geocéntrica: el centro de la órbita es la tierra</p>
+                    </div>
+                </div>
+                <div class="articleContentItem">
+                    <div class="articleContentItem1">
+                        <h3>Clasificación por altidud</h3>
+                    </div>
+                    <div class="articleContentItem2"
+                        style="border-left: 1px solid #FD602E; padding-left: 10px; margin-bottom: 10px;">
+                        <p>LEO(Low Earth Orbit): de 160-2000 km de altitud, principalmente para la observación
+                            terrestre, su
+                            periodo orbital de pocas horas o minutos, son las órbitas de mayor velocidad, en esta órbita
+                            se
+                            sitúa la estación espacial internacional ISS a unos 400 km de altitud.
+                        </p>
+                        <p>MEO(Medium Earth Orbit): de 2000km a 35.000km, periodo orbital de 12h aproximadamente, se
+                            suelen
+                            poner satélites de tecnologías de posicionamiento global.</p>
+                        <p>HEO(High Earth Orbit): a más de 35.000 km, periodo orbital de igual o más de 24h, se utiliza
+                            para
+                            meteorología y comunicaciones
+                        </p>
+                    </div>
+                </div>
+                <div class="articleContentItem">
+                    <h3>Clasificación por inclinación</h3>
+                    <div class="articleContentItem1"
+                        style="border-left: 1px solid #FD602E; padding-left: 10px; margin-bottom: 10px;">
+                        <img src="./IMAGES/orbitas-po-inclinacion.png" alt="orbitas por inclinacion">
+                    </div>
+                </div>
+                <div class="articleContentItem">
+                    <h3>Clasificación de excentricidades</h3>
+                    <img src="./IMAGES/orbitas-por-excentricidad.png" alt="orbitas por excentricidades"
+                        style="border-left: 1px solid #FD602E; padding-left: 10px; margin-bottom: 10px;">
+                </div>
+            </div>
+        </article>
+        <div class="categoriasRelacionadas">
+            <h2 class="categoriasRelacionadas__h2">DESCRUBRE MÁS CATEGORÍAS</h2>
+            <div class="categoriasContainer--Relacionadas">
+                <a href="cohetes-y-lanzadores.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent--black">
+                        <h3 class="categoriasContainerItems__h3">Cohetes y lanzadores</h3>
+                        <img src="./IMAGES/cohetes.png" alt="imagen cohetes" class="categoriasContainerContent__img">
+                    </div>
+                </a>
+                <a href="control-termico.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent">
+                        <h3 class="categoriasContainerItems__h3">Control termico</h3>
+                        <img src="./IMAGES/control-termico.png" alt="imagen control termico"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+                <a href="medio-ambiente-espacial.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent--black">
+                        <h3 class="categoriasContainerItems__h3">Medio Ambiente Espacial</h3>
+                        <img src="./IMAGES/medio-ambiente-espacial.png" alt="imagen medio ambiente espacial"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+                <a href="potencia.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent">
+                        <h3 class="categoriasContainerItems__h3">Potencia</h3>
+                        <img src="./IMAGES/potencia.png" alt="imagen potencia espacial"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <include src="src/VIEWS/footer.html"></include>
+</body>
+
+</html>

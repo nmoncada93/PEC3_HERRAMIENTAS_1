@@ -1,0 +1,118 @@
+.article {
+    color: white;
+    padding: 20px;
+    font-family: var(--font-titilium);
+    text-align: center;
+    font-size: 18px;
+
+    &__h1{
+        font-family: var(--font-orbitron);
+        letter-spacing: 3;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &__h2 {
+        color: var(--color-orange);
+        letter-spacing: 2;
+    }
+}
+
+.articleContainer__blockquote {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px; 
+    
+}
+
+.articleContainer__iframe {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.articleContent {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0 10px 30px 10px;
+    margin-top: 20px;
+}
+
+.articleContent--simple {
+    border: 1px solid var(--color-orange);
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 0 10px 30px 10px;
+}
+
+.articleList__dt {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+    width: 80%;
+    margin: 15px auto;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(253,96,46, 0.5);
+}
+
+.articleList__dd {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.articleList__a, 
+.articleContainer__a {
+    color: var(--color-orange);
+}
+
+.articleList__a:hover, 
+.articleContainer__a:hover {
+    font-size: 20px;
+}
+
+.articleContainer__dd {
+    padding: 10px;
+    margin: 0;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.articleContainer__dt {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px; 
+}
+
+@media (min-width:768px) {
+    .articleContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &__p { padding: 0 20px; }
+
+        &__img {
+            max-width: 50%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .articleContent--simple .articleContainer { flex-direction: row-reverse; }
+
+    .articleContent__img { max-width: 80%; }
+
+    .article { margin: 0 5%; }
+
+    .articleContentItem {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .articleContentItem2--order { order: 1; }
+
+    .articleContentItem1--order { order: 2; }
+}
+

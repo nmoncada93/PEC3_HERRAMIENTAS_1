@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1">
+    <meta name="description"
+        content="Este sitio web tiene como finalidad presentar la ingenieria de los sistemas espaciales">
+    <meta name="author" content="Nicolas Moncada">
+    <title>INGENIERIA DE LOS SISTEMA ESPACIALES: Cohetes y lanzadores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,600;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./IMAGES/logo-sistemas-espaciales.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7b545bf262.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bodyMecanicaOrbital">
+    <header>
+        <div class="headerMobil">
+            <a href="index.html"><img class="headerMobil__img" src="./IMAGES/logo-sistemas-espaciales.png"
+                    alt="logo de un astronauta" style="width: 60px; height: 60px;"></a>
+            <span class="headerMobil__span">SPACE SYSTEMS</span>
+        </div>
+        <include src="src/VIEWS/header.html"></include>
+    </header>
+    <main>
+        <article class="article">
+            <h1 class="article__h1">Cohetes y lanzadores</h1>
+            <div class="articleContainer">
+                <img src="./IMAGES/cohetes-y-lanzadores.png" alt="imagen de un cohete" class="articleContainer__img">
+                <p class="articleContainer__p">Cuando hablamos de sistemas espaciales de ingeniería no podemos dejar
+                    de hablar de los cohetes y lanzadores, ya que son otra de las piezas fundamentales para poder
+                    llegar al espacio y poner un cuerpo en órbita. Los cohetes en general por muy nuevos que sean
+                    siempre seguirán enfrentándose a las leyes de Newton y siempre tendrán que vencer la misma
+                    fuerza de atracción gravitatoria así que las leyes de la física siempre seguirán teniendo las
+                    mismas implicaciones sobre el despegue. En este artículo hablaremos de cohetes y lanzadores
+                    refiriéndonos prácticamente a lo mismo, no obstante, explicaremos a continuación la pequeña
+                    diferenciación entre los dos términos.
+                </p>
+            </div>
+            <div class="articleContent">
+                <h2 class="article__h2">Conceptos</h2>
+                <div class="articleContentItems">
+                    <div class="articleContentItem">
+                        <div class="articleContentItem1">
+                            <h3 class="article__h3">Cohetes</h3>
+                            <p class="articleContent__p">Cuando hablamos de cohetes nos referimos al dispositivo que
+                                utiliza
+                                la
+                                reacción de expulsión de masa
+                                para generar propulsión. Los cohetes pueden ser utilizados en una variedad de
+                                aplicaciones,
+                                desde
+                                cohetes espaciales que lanzan satélites o naves espaciales al espacio hasta cohetes
+                                militares,
+                                cohetes de fuegos artificiales y más.</p>
+                        </div>
+                        <div class="articleContentItem2">
+                            <img src="./IMAGES/cohete3.png" alt="cohete" class="articleContent__img">
+                        </div>
+                    </div>
+                    <div class="articleContentItem">
+                        <div class="articleContentItem1--order">
+                            <h3 class="article__h3">Lanzadores</h3>
+                            <p class="articleContent__p">Un lanzador es un vehículo diseñado para llevar una carga al
+                                espacio, y
+                                típicamente consta de varias
+                                etapas. Estas etapas se encienden secuencialmente a medida que el lanzador asciende, y
+                                cada
+                                etapa
+                                contiene motores de cohete que proporcionan la energía necesaria para superar la
+                                gravedad de
+                                la
+                                Tierra y entrar en órbita.</p>
+                        </div>
+                        <div class="articleContentItem2--order">
+                            <img src="./IMAGES/lanzador.png" alt="cohete" class="articleContent__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articleContent--simple">
+                <h2 class="article__h2">Factores que intervienen en el lanzamiento de cohetes</h2>
+                <div class="articleList">
+                    <dl class="articleList__dl">
+                        <dt class="articleList__dt">Principio de acción y reacción</dt>
+                        <dd class="articleList__dd">Es básicamente la tercera ley de newton y esencial en la propulsión
+                            de estos vehículos.
+                        </dd>
+                        <dd class="articleList__dd">Esto significa que cuando el motor del cohete expulsa gas o
+                            partículas a alta velocidad
+                            hacia
+                            atrás, genera una fuerza que impulsa el lanzador hacia adelante.</dd>
+                        <dd class="articleList__dd"> Esto permite al lanzador superar la gravedad de la Tierra y
+                            ascender al espacio.</dd>
+                        <dd class="articleList__dd"> Es la ley fundamental del lanzamiento y nos ha condenado a tener
+                            que dejar algo atrás para
+                            poder seguir hacia adelante y esto limita nuestro avance hacia la exploración del espacio
+                            profundo.</dd>
+                        <dt class="articleList__dt">Fuerza de atracción gravitatoria</dt>
+                        <dd class="articleList__dd">Ya se ha explicado brevemente en la categoría de “Mecánica orbital”,
+                            básicamente la gravedad
+                            de
+                            la Tierra es una fuerza que tira del lanzador hacia abajo. </dd>
+                        <dd class="articleList__dd">Para superar esta fuerza, el lanzador debe generar suficiente
+                            empuje. </dd>
+                        <dd class="articleList__dd"> La aceleración debida a la gravedad es una constante cerca de la
+                            superficie de la Tierra y
+                            disminuye a medida que el lanzador asciende.</dd>
+                        <dd class="articleList__dd"> Los ingenieros deben tener en cuenta esta aceleración gravitatoria
+                            al diseñar y calcular la
+                            trayectoria del lanzamiento.</dd>
+                        <dt class="articleList__dt">Resistencia aerodinámica y vibraciones</dt>
+                        <dd class="articleList__dd">De momento los lanzamientos de cohetes los estamos realizando desde
+                            el planeta tierra, en un
+                            futuro posiblemente se realizarán desde la luna, la ventaja de esto sería que en la luna no
+                            tenemos atmósfera que pueda generar resistencia aerodinámica y por tanto dificultar el
+                            avance
+                            del cohete.</dd>
+                        <dd class="articleList__dd">Los lanzadores espaciales suelen tener formas aerodinámicas y, en la
+                            mayoría de los casos,
+                            ascienden verticalmente inicialmente para salir de la atmósfera más densa lo más rápido
+                            posible.
+                        </dd>
+                        <dd class="articleList__dd">A todo lo anterior debemos sumar las vibraciones que debe soportar
+                            todos los elementos
+                            estructurales, sometidos a inmensas fuerzas que lo pueden romper o deformar y que muchos
+                            accidentes en el sector aeroespacial han sido ocasionados por vibraciones indeseables.</dd>
+                        <dt class="articleList__dt">Velocidad y órbita deseada</dt>
+                        <dd class="articleList__dd">El propósito de la misión condiciona totalmente al lanzamiento ya
+                            que factores como la carga
+                            útil o también conocida como Payload hacen que un lanzamiento pueda ser muy diferente de
+                            otro
+                        </dd>
+                        <dd class="articleList__dd">A mayor altitud requerida de órbita se necesitará una mayor energía
+                            en el lanzamiento.</dd>
+                        <dd class="articleList__dd">Para más información sobre órbitas se recomienda consultar la
+                            categoría de <a href="./mecanica-orbital.html" class="articleList__a"> <strong>“Mecánica
+                                    orbital”</strong></a>.
+                        </dd>
+                        <dt class="articleList__dt">Dinámica de los cohetes, eficiencia y energía</dt>
+                        <dd class="articleList__dd">una vez tenemos claro el propósito de la misión, sabemos la carga
+                            útil necesaria para la
+                            misión
+                            tocará hacer la elección correcta del lanzador/cohete. </dd>
+                        <dd class="articleList__dd">Los ingenieros deben tener en cuenta factores como la relación entre
+                            la masa del lanzador y
+                            la
+                            masa de la carga útil a medida que se queman los combustibles, la aceleración y la variación
+                            de
+                            la velocidad durante el vuelo.</dd>
+                        <dd class="articleList__dd">Los lanzadores espaciales deben ser lo suficientemente eficientes en
+                            la conversión de
+                            energía
+                            química en energía cinética para superar la gravedad de la Tierra.</dd>
+                        <dd class="articleList__dd">Esto implica una cuidadosa consideración de los combustibles y la
+                            relación entre la masa del
+                            lanzador y la carga útil que lleva.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="articleContent">
+                <h2 class="article__h2">Tipos de cohetes/lanzadores</h2>
+                <div class="articleContentItems">
+                    <p class="articleContentItems" style="text-align: center;">En este artículo veremos de manera muy
+                        breve algunos de los tipos de
+                        cohetes/lanzadores que
+                        existen y
+                        algunas de sus clasificaciones.</p>
+                    <img src="./IMAGES/clasificacion-cohetes.png" alt="foto de varios cohetes"
+                        class="articleContentItems__img">
+                </div>
+                <div class="articleList">
+                    <dl class="articleList__dl">
+                        <dt class="articleList__dt">Cohetes de combustible líquido</dt>
+                        <dd class="articleList__dd">Estos cohetes utilizan combustibles y oxidantes líquidos almacenados
+                            en tanques separados.
+                            La
+                            mezcla se quema en una cámara de combustión para generar empuje.</dd>
+                        <dd class="articleList__dd">Ejemplos incluyen el cohete Saturn V y el transbordador espacial.
+                        </dd>
+                        <dt class="articleList__dt">Cohetes de combustible sólido</dt>
+                        <dd class="articleList__dd">Estos cohetes utilizan un combustible sólido que ya está mezclado y
+                            compactado en el motor.
+                        </dd>
+                        <dd class="articleList__dd">Se enciende y quema de manera descontrolada, la combustión una vez
+                            iniciada no se puede
+                            detener
+                            y esta es la gran diferencia respecto al combustible líquido, que como ventaja es controlado
+                            y
+                            se puede detener.</dd>
+                        <dd class="articleList__dd">Ejemplos incluyen los cohetes de combustible sólido utilizados en
+                            algunos cohetes espaciales
+                            y
+                            misiles</dd>
+                        <dt class="articleList__dt">Cohetes híbridos</dt>
+                        <dd class="articleList__dd">Los cohetes híbridos utilizan una combinación de combustible sólido
+                            y un oxidante líquido o
+                            gaseoso. Estos cohetes ofrecen algunas de las ventajas de ambos tipos de propulsión.</dd>
+                        <dd class="articleList__dd">Ejemplos incluyen el SpaceShipOne de Virgin
+                            Galactic.</dd>
+                    </dl>
+                </div>
+            </div>
+        </article>
+        <div class="categoriasRelacionadas">
+            <h2 class="categoriasRelacionadas__h2">DESCRUBRE MÁS CATEGORÍAS</h2>
+            <div class="categoriasContainer--Relacionadas">
+                <a href="mecanica-orbital.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent--black">
+                        <h3 class="categoriasContainerItems__h3">Mecánica Orbital</h3>
+                        <img src="./IMAGES/mecanica-orbital.png" alt="imagen mecanica orbital"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+                <a href="control-termico.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent">
+                        <h3 class="categoriasContainerItems__h3">Control termico</h3>
+                        <img src="./IMAGES/control-termico.png" alt="imagen control termico"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+                <a href="medio-ambiente-espacial.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent--black">
+                        <h3 class="categoriasContainerItems__h3">Medio Ambiente Espacial</h3>
+                        <img src="./IMAGES/medio-ambiente-espacial.png" alt="imagen medio ambiente espacil"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+                <a href="potencia.html" class="categoriasContainer__a">
+                    <div class="categoriasContainerContent">
+                        <h3 class="categoriasContainerItems__h3">Potencia</h3>
+                        <img src="./IMAGES/potencia.png" alt="imagen potencia espacial"
+                            class="categoriasContainerContent__img">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <include src="src/VIEWS/footer.html"></include>
+</body>
+
+</html>

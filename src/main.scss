@@ -1,0 +1,122 @@
+@import 'STYLES/header';
+@import 'STYLES/variables';
+@import 'STYLES/homeMobil';
+@import 'STYLES/homeDesktop';
+@import 'STYLES/categorias';
+@import 'STYLES/footer';
+@import 'STYLES/article';
+@import 'STYLES/presentacion';
+@import 'STYLES/contruccion';
+@import 'STYLES/enlaces';
+
+
+body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;  
+}
+
+@media (min-width:992px) { .bodyCategorias { padding: 0 30px; } }
+
+.homeMobil__h1 {
+    color: white;
+    padding: 20px;
+}
+
+a { text-decoration: none; }
+
+ul { 
+    list-style: none;
+    padding-left: 0; 
+}
+
+p { text-align: justify; }
+
+iframe, 
+img { 
+    max-width: 100%; 
+}
+
+/*******************CLIP PATH***************/
+.clip-path-img{
+	max-width: 100%;
+	object-fit: cover;
+	clip-path: polygon(
+			0 50%, 0 10%, 25% 10%, 25% 50%, 30% 50%, 30% 0, 70% 0, 70% 50%, 75% 50%, 75% 10%, 100% 10%, 100% 90%, 75% 90%, 75% 50%, 70% 50%, 70% 100%, 30% 100%, 30% 50%, 25% 50%, 25% 90%, 0 90%, 0 50%
+	);
+}
+
+.clip-path-img-container {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1; 
+  }
+
+  .homeDesktop, .homeMobil, .headerDesktop {
+    position: relative;
+    z-index: 2; 
+  }
+
+  @media screen and (min-width: 768px) {  
+  .indexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }/*
+  .clip-path-img-container {
+    top: 110;
+  }*/
+}
+
+
+/*******************ANIMACION CSS***************/
+
+@keyframes cambioColor {
+	0% { color: white; transform: translateY(0); }
+	50% { color: var(--color-orange); transform: translateY(-10px); }
+	100% { color: white; transform: translateY(0); }
+  }
+
+  .homeMobil__h1, 
+  .homeDesktop__h1, .article__h1, 
+  .categoriasContainer__h1 {
+	    animation: cambioColor 3s infinite;
+  }
+
+/*******************SVG***************/
+  svg path {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    
+  }
+
+  .triangle path { animation: morph 12s linear 1s infinite; }
+  
+  @keyframes morph {
+    25% {
+      d: path("M5,2 L8,5 L5,8 L2,5 L3.5,3.5 L5,2z");
+    }
+    50% {
+      d: path("M5,2 L8,2 L8,8 L2,8 L2,2 L5,2z");
+    }
+    75% {
+      d: path("M5,2 L8,4.3 L7,8 L3,8 L2,4.3 L5,2z");
+    }
+    100% {
+      d: path("M5,2.36 L6.5,5.18 L8,8 L2,8 L3.5,5.18 L5,2.36z");
+    }
+  }
+  
+
+
+
+
+
+
+
+

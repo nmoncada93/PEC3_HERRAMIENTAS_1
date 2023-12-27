@@ -1,0 +1,105 @@
+.presentacionTitle {
+    background-image: url(./IMAGES/astronauta-large.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__h1 {
+        color: white;
+        font-family: var(--font-orbitron);
+        text-align: center;
+        font-size: 50px;
+        padding:100px 0;
+    }
+}
+
+.presentacionIntro, .presentacionIntro--orange {
+    padding: 20px;
+    font-family: var(--font-titilium);
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 100px 20px 100px 20px;
+}
+
+.presentacionIntro {
+    background-color: white;
+    border-radius: 20px;
+    
+    &__p { margin-bottom: 30px; }
+}
+
+.presentacionIntro--orange {
+    border: 2px solid var(--color-orange);
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.presentacionH2 {
+    color: var(--color-orange);
+    font-family: var(--font-orbitron);
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+
+.presentacionIntro__h3 {
+    color: white;
+    font-size: 25px;
+}
+
+.superpuestaContainer {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: -90;
+        left: 0;
+        z-index: 1;
+        width: 130px;
+        height: 130px;      
+    }
+
+    &__img--bottom {
+        position: absolute;
+        bottom: -90;
+        right: 0;
+        z-index: 1;
+        width: 130px;
+        height: 130px;
+    }
+
+    &__img--topRight {
+        position: absolute;
+        top: -90;
+        right: 0;
+        z-index: 1;
+        width: 130px;
+        height: 130px;
+    }  
+}
+
+.presentacionIntro__a {
+    color: white;
+    background-color: var(--color-orange);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;  
+}
+
+.presentacionIntro__a:hover {
+    background-color: white;
+    color: var(--color-orange);
+}
+
+@media (min-width:768px) {
+    .superpuestaContainer {
+        margin-left: 150px;
+       margin-right: 150px;
+    } 
+    
+    .presentacionH2{ margin-top: -150px; }
+    
+}
