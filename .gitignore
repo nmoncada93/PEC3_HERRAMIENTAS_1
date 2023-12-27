@@ -6,7 +6,7 @@ node_modules/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
 
 # Optional npm cache directory
 .npm
